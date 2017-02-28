@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet"/>
+    <title>Lost &amp; Found</title>
+  </head>
+  <body>
+   <div class="container">
+     <div class="menuremove">
+      <div class="menu">
+          <a href="./index.html">Home</a>
+          <a href="./recently_found.html">Recently Found</a>
+          <a href="./recently_teleported.html">Recently Teleported</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    <div class="main">
+      <div class="header">
+          <img class="menuimg" src="img/ic_menu_white_24dp.png" onclick="menuAnimation()"> </img>
+        <h2> Lost &amp; Found </h2>
+        </div>
+    </div>
+    <div class="text"> What are you looking for?</div>
+    <img class="mic" src="img/mic.png">
+    <input id="pac-input" class="controls" type="text" placeholder="Search">
+    <div class="hidden" id="map">
+      </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv2c0HUxEsnBM1cgB_NJjOGp_BGZ642IQ &libraries=places&callback=initAutocomplete" async defer>
+    </script>
+  <script src="./js/main.js"> </script>
+  </body>
+</html>

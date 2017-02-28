@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height:1000px;
+}
+
+.header{
+	background-color: #FF9800;
+	display: flex;
+	height:auto;
+	flex-grow:1;
+	flex-direction: row;
+	font-family: 'Roboto', sans-serif;
+	color:#FFF;
+	font-size: 10px;
+	line-height: 300%;
+  max-height: 56px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+
+.box{
+  width:auto;
+  height:50px;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.box a {
+  text-decoration: none;
+}
+
+h2{
+	padding-left: 10px;
+}
+
+img{
+	padding-left: 10px;
+  padding-top: 10px;
+}
+
+.main{
+  margin:0;
+}
+
+input{
+	display: flex;
+	justify-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.3s
+
+  }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin:0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .text {
+      font-size: 25px;
+      left:18vw;
+    }
+    .mic {
+      left:71.5vw
+    }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .text {
+      font-size: 25px;
+      left:30vw;
+      top: 40vh;
+    }
+    .mic {
+      left:62vw;
+      top:51vh;
+    }
+
+}
