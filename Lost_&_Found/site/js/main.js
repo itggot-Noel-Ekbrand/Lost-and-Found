@@ -3,6 +3,9 @@ function menuAnimation() {
 	document.querySelector(".menu").classList.add("menuAnimation");
 }
 
+function menuRemove() {
+	document.querySelector(".menu").classList.remove("menuAnimation");
+}
 
 function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
