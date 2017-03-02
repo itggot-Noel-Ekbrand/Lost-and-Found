@@ -1,10 +1,28 @@
 
 function menuAnimation() {
 	document.querySelector(".menu").classList.add("menuAnimation");
+	document.querySelector(".shade").classList.add("shadeAnimation");
+
 }
 
 function menuRemove() {
 	document.querySelector(".menu").classList.remove("menuAnimation");
+	document.querySelector(".shade").classList.remove("shadeAnimation");
+}
+
+function searchRemove() {
+	document.querySelector(".controls").classList.add("displaynone");
+	document.querySelector(".text").classList.add("displaynone");
+	document.querySelector(".mic").classList.add("displaynone");
+}
+
+function confirmTeleport() {
+	document.querySelector(".confirm").classList.toggle("displaynone");
+
+}
+
+function reload() {
+	location.reload();
 }
 
 function initAutocomplete() {

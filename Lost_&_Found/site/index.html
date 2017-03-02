@@ -11,22 +11,37 @@
   <body>
    <div class="container">
       <div class="menu">
+        <h5 class="menutext"> Noel Ekbrand </h5>
+        <h6 class="menutext2"> noel.ekbrand@itggot.se </h6>
+        <img class="account" src="img/account.svg"> </img>
+        <img class="coverphoto" src="img/cover.jpg">
           <a href="./index.html">Home</a>
           <a href="./recently_found.html">Recently Found</a>
           <a href="./recently_teleported.html">Recently Teleported</a>
-          <a href="#">Settings</a>
-        </div>
+          <div class="boxline">
+          </div>
+      </div>
+      <div class=shade onclick="menuRemove()"> </div>
       <div class="main">
         <div class="header">
-            <img class="menuimg" src="img/ic_menu_white_24dp.png" onclick="menuAnimation()"> </img>
-            <h2 class="headertext"> Lost &amp; Found </h2>
+            <img class="menu-img" src="img/menu.svg" onclick="menuAnimation()"> </img>
+            <h2 class="header-text"> Lost &amp; Found </h2>
+            <img class="header-search" src="img/searchwhite.svg" onclick="reload()"> </img>
           </div>
         </div>
-      <div class="closemenu" onclick="menuRemove()">
-      <div class="text"> What are you looking for?</div>
-        <img class="mic" src="img/mic.png">
+      <div class="center">
+        <div class="text"> What are you looking for?</div>
+        <div class="confirm displaynone">
+          <h5 id="teleport1"> Do you want to teleport? </h5>
+          <div class="flexrow">
+            <h5 class="teleport2"> TELEPORT </h5>
+            <h5 id="teleport3"> CANCEL </h5>
+          </div>
+        </div>
       </div>
-      <input id="pac-input" class="controls" type="text" placeholder="Search">
+        <img class="FAB" src="img/FAB.png" onclick="confirmTeleport()"> </img>
+        <img class="mic" src="img/mic.png">
+      <input id="pac-input" class="controls" type="search" placeholder="Search" onsearch="searchRemove()"> </input>
       <div class="hidden" id="map">
       </div>
     </div>
