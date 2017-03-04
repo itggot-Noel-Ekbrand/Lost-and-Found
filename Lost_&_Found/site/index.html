@@ -32,14 +32,16 @@
       <div class="center">
         <div class="text"> What are you looking for?</div>
         <div class="confirm displaynone">
-          <h5 id="teleport1"> Do you want to teleport? </h5>
+          <h5 class="teleport1"> Do you want to teleport? </h5>
           <div class="flexrow">
-            <h5 class="teleport2"> TELEPORT </h5>
-            <h5 id="teleport3"> CANCEL </h5>
+            <h5 class="teleport2" onclick="reload()"> TELEPORT </h5>
+            <h5 class="teleport3" onclick="confirmTeleport()"> CANCEL </h5>
           </div>
         </div>
       </div>
-        <img class="FAB" src="img/FAB.png" onclick="confirmTeleport()"> </img>
+        <div class="FAB" onclick="confirmTeleport()">
+          <img class="location" src="img/location.svg"> </img>
+          </div>
         <img class="mic" src="img/mic.png">
       <input id="pac-input" class="controls" type="search" placeholder="Search" onsearch="searchRemove()"> </input>
       <div class="hidden" id="map">
